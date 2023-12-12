@@ -1,0 +1,3 @@
+log in to the website using command
+(Note the port number can vary)
+ssh bandit.labs.overthewire.org -p 2220

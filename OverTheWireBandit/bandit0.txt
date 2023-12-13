@@ -1,3 +1,6 @@
 log in to the website using command
 (Note the port number can vary)
-ssh bandit.labs.overthewire.org -p 2220
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+(Then it will ask for pasword which it password like below : )
+bandit0@bandit.labs.overthewire.org's password:
+(Type the password: bandit0, Note that the password will be invisible, and press enter))

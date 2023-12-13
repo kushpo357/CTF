@@ -1,0 +1,13 @@
+(first type)
+ls
+output----> readme
+(now use file it tells you about the type of file)
+file readme
+outpu---->readme: ASCII text
+(cat command opens displays the content of the text file)
+cat readme
+output----> (second password)
+(copy the password into a file where other passwords will be stored)
+(for going out use command)
+logout
+(or the command exit)

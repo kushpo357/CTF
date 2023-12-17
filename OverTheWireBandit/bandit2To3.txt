@@ -1,0 +1,15 @@
+(log into the file using)
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+(Enter the third password)
+bandit2@bandit.labs.overthewire.org's password:
+(Check the contents)
+ls
+(As this file name is spaced, use quotes or backslash before every space to run any command)
+file spaces\ in\ this\ filename
+Or
+file 'spaces in this filename'
+Output ----> spaces in this filename: ASCII text
+(check the contents)
+cat 'spaces in this filename'
+Output ----> fourth password
+(save the fourth password and logout)

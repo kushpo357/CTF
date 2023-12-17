@@ -1,0 +1,14 @@
+(log into bandit 1 using the below command)
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+(Now type your second password in)
+bandit1@bandit.labs.overthewire.org's password:
+(check the file)
+ls
+output ----> -
+(since the file is a dashed file use ./ before the file name for any command)
+file ./-
+output ----> ./-: ASCII text
+(check the contents)
+cat ./-
+(save the third password)
+

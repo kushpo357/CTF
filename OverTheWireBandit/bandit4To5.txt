@@ -1,0 +1,35 @@
+log into bandit 4 using the 5th password
+=>ssh ssh bandit4@bandit.labs.overthewire.org -p 2220
+ceck contents
+=>ls
+output->inhere
+go into inhere
+=>cd inhere
+check contents
+=>ls
+output->
+-file00  -file02  -file04  -file06  -file08
+-file01  -file03  -file05  -file07  -file09
+check the file type for first file
+=>file ./-file00
+output->./-file00: data
+check the contents
+=>cat ./-file00
+output->
+QRrtZ�i�        �H
+                  |��ȧ����^��b
+this is not human readable we have to find a file
+which is an ascii text file, write the following 
+command for this
+=>file ./* | fgrep ASCII
+output->./-file07: ASCII text
+The command 'file ./*' tells about the file type of 
+all the dashed files. The pipe operator '|' converts 
+output of the first code to the input of the second code
+The command 'fgrep ASCII' find the file with ascii text 
+type from the files given.
+Open the file
+=>cat ./-file07
+ouput->
+sixth password
+Save this password

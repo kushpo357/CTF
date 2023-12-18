@@ -1,0 +1,20 @@
+(log into bandit 3 using fourth password)
+ssh ssh bandit3@bandit.labs.overthewire.org -p 2220
+(check contents)
+ls
+output ----> inhere
+(go into inhere folder)
+cd inhere
+(check contentsi)
+ls
+Nothing is shown
+(check all files)
+ls -a
+output ----> .  ..  .hidden
+(check file type)
+file .hidden
+Output ----> .hidden: ASCII text
+(display content)
+cat .hidden
+ouput ----> fifth password
+(save the 4th password)

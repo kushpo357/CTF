@@ -1,0 +1,29 @@
+log into the bandit using the 6th password
+check the contents
+=> ls
+output->inhere/
+go into inhere
+=>cd inhere
+check the contents
+=>ls
+output->
+maybehere00  maybehere03  maybehere06  maybehere09  maybehere12  maybehere15  maybehere18
+maybehere01  maybehere04  maybehere07  maybehere10  maybehere13  maybehere16  maybehere19
+maybehere02  maybehere05  maybehere08  maybehere11  maybehere14  maybehere17
+to find a human readable non-executable 1033 c file use the command
+=>find . -type f -size 1033c ! -executable
+output->./maybehere07/.file2
+go into that file
+=>cd maybehere07
+check contents
+=>ls
+output->
+-file1  -file2  -file3  spaces file1  spaces file2  spaces file3
+check all contents
+=>ls -a
+output->
+.  ..  -file1  .file1  -file2  .file2  -file3  .file3  spaces file1  spaces file2  spaces file3
+open the .file2
+=>cat .file2
+output->seventh password
+save the seventh password

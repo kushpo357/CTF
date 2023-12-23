@@ -1,0 +1,20 @@
+log into bandit 7 using 8th password
+
+check the contents
+=>ls
+output->data.txt
+
+check the file type
+=>file data.txt
+output->data.txt: Unicode text, UTF-8 text
+
+check the amount of lines in the file
+=>wc -l data.txt
+output->98567 data.txt
+
+since the amount of lines is too much we will have to use grep
+we have to get a line which is next to the word "millionth"
+=>grep "millionth" data.txt
+output->millionth       9th password
+
+save the 9th password

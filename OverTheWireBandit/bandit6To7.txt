@@ -1,0 +1,30 @@
+Log into bandit 6 using the 7th password, there is nothing in this file
+We have to find a file on the server which is of size 33 bytes
+is owned by bandit7 and owned by the group bandit6
+=>find / -type f -size 33c -user bandit7 -group bandit6
+output->A long list having many lines saying permission denied warnings
+
+/ is used to tell that the file is to be found all around the server not 
+onlyt in the current directory
+
+we have to suppress this warnings to get our result
+=>find / -type f -size 33c -user bandit7 -group bandit6 2>/dev/null
+output->/var/lib/dpkg/info/bandit7.password
+the 2>/dev/null command redirects all the warnings to dev/null
+effectively suppressing the warnings
+
+save the path and use cd 
+=>cd /var/lib/dpkg/info/bandit7.password
+Or
+use the command
+=>cd -- "$(dirname "$(find / -type f -size 33c -user bandit7 -group bandit6 2>/dev/null)")"
+in this command dirname extracts the directory part of the path and this value is fed into cd
+
+check if the file is there or not
+=>find bandit7.password
+output->bandit7.password
+
+see the contents of the file
+=>cat bandit7.password
+output-> 8th password
+save the 8th password
